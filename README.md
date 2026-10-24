@@ -1,27 +1,28 @@
-# Sn compiler releases and issues
+# Sn compiler downloads and issues
 
-Official compiler downloads and public issue tracking for **Sn**, the SnAPI programming language, from **Logic & Lore Interactive**.
+Official binary releases and public issue tracking for the **Sn programming language**,
+a Logic & Lore Interactive product.
 
-Sn is a systems language targeting C++ runtime performance, scripting-speed compilation, and an interactive native JIT. It is intended for games, engines, embedded software, and other real-time systems, with a modern syntax familiar to C++ developers.
+Sn is a proprietary systems language under heavy development. The compiler
+implementation and its private development history are not published here.
+The standard-library Sn sources are intentionally included with compiler downloads.
 
-**Sn is under heavy development.** The language goals describe the intended 1.0 experience; current versions may not meet every feature or performance target. Progress is made regularly. Read the release notes and known limitations for the compiler version you use.
+- [Download Sn 0.2.0 Preview 1 for Linux x86_64](https://github.com/RichmarIII/sn-releases/releases/tag/v0.2.0-preview.1)
+- [Matching installation guide](https://sn.logicnlore.com/docs/0.2.0-preview.1/getting-started/)
+- [Matching standard-library reference](https://sn.logicnlore.com/reference/0.2.0-preview.1/)
+- [Report a bug](https://github.com/RichmarIII/sn-releases/issues/new/choose)
+- [Language website](https://sn.logicnlore.com/)
 
-## Official downloads
+The Linux package requires glibc 2.35 or newer. LLVM and non-glibc runtime
+dependencies are bundled. AOT builds also require the system Clang C driver and development headers; the matching linker is bundled.
+Read the release's README and VALIDATION files for tested workflows and known
+limitations, including the automatic C-import preparation failure in this preview.
+The intended 1.0 goals on the website are not a guarantee about this development release.
 
-[View compiler releases](https://github.com/RichmarIII/sn-releases/releases).
+Download the compiler **release asset**, not GitHub's automatically generated
+“Source code” archives. Those archives contain only this distribution repository's
+README and issue configuration; they do not contain the compiler implementation.
 
-No compiler binary has been published in this repository yet. When available, releases will provide platform-specific toolchain archives, SHA-256 checksums, installation instructions, and known limitations. Each official release is built from a selected Git tag in the private compiler repository.
-
-Download the attached toolchain archive for your platform. GitHub's automatically generated **Source code** archives contain only this public distribution repository's documentation and issue templates; they do not contain the compiler or a usable toolchain.
-
-## Bugs and feature requests
-
-[Report a bug or request a feature](https://github.com/RichmarIII/sn-releases/issues/new/choose).
-
-For bugs, include your exact compiler version, target platform, a small reproducing example, and the expected and actual behavior. Review your report before posting: GitHub Issues are public, so remove credentials, private project code, and other confidential information.
-
-## Compiler source and contributions
-
-Sn is **closed-source**, with one official compiler maintained by its creator. This repository exists for official binary distribution, release notes, and public feedback. It is not the compiler source repository or a source-contribution project. No compiler source code or private development history is hosted here.
-
-SnAPI and SnBuild are separate products in the wider development ecosystem. Public availability of downloads and issue tracking does not grant permission to redistribute the compiler or represent modified builds as official releases. See the license included with each future toolchain release for its usage and distribution terms.
+When reporting a bug, include the release version, platform, exact command, a
+small reproducing example, and actual output. Share only material you intend to
+make public; remove credentials and private project content.
