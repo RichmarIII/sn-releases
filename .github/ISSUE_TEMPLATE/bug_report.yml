@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a problem with an official Sn compiler release.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sn is under heavy development. Check the known limitations for your release before filing a report.
+        This issue is public. Remove credentials, private project source, and confidential information.
+  - type: input
+    id: compiler-version
+    attributes:
+      label: Compiler version
+      description: Exact version or release tag of your official Sn toolchain.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and architecture
+      placeholder: Operating system, version, CPU architecture, and target if different.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps and minimal example
+      description: Include the command and a small example you have permission to publish.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and diagnostics
+      description: Include relevant error messages. Remove secrets and confidential paths.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Editor, optimization settings, native library dependencies, or other relevant details.
