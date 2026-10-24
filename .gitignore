@@ -1,0 +1,12 @@
+# Only public distribution documentation and issue templates belong in this tree.
+# Attach verified toolchain archives to GitHub Releases; never commit build trees.
+*
+!README.md
+!.gitignore
+!.github/
+.github/*
+!.github/ISSUE_TEMPLATE/
+.github/ISSUE_TEMPLATE/*
+!.github/ISSUE_TEMPLATE/bug_report.yml
+!.github/ISSUE_TEMPLATE/feature_request.yml
+!.github/ISSUE_TEMPLATE/config.yml
